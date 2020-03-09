@@ -25,7 +25,7 @@ export default fp(async (fastify, opts: { uri: string }, next) => {
     opts.uri,
     {
       useNewUrlParser: true,
-      keepAlive: 1
+      keepAlive: true
     }
   );
 
